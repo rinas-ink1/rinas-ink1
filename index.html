@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Главная</title>
+    <style>
+  @media (min-width: 350px){
+    body{
+        font-family:-apple-system, BlinkMacSystemFont,
+         'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-top: 0;
+        margin:0;   
+    }
+p::selection{background-color: rgb(255, 178, 90);
+}
+    a{text-decoration: none;
+        color:white;
+    font-weight: 600;
+font-size:30px;}
+    .embleme{background-color: rgb(255, 185, 104);
+    color:white;
+    font-weight: 600;}
+    span{
+    font-style: oblique;}
+    .head{
+        height: 70px;
+        box-sizing: border-box;
+        margin: auto;
+        padding: 15px;
+        padding-left: 35.5px;
+        font-size: 35px;
+        position: fixed;
+        background: white;
+        
+        width: 100%;
+        box-shadow:rgba(0, 0, 0, 0.1) -2.5px -2.5px 3px 3px;
+        z-index: 10;
+    }
+    .menubt{
+
+        display: inline-block;
+        height: 55px;
+        width: 55px;
+        margin:-12px;
+        margin-left:10px;
+        background-image:url('./images/menu.svg');
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .menubt:hover{background-color: rgba(255, 185, 104, 0.5);}
+
+    .bt{box-sizing:border-box;
+        padding:5px 67.5px 5px 67.5px;
+        height: 50px;
+        background-color: rgb(255, 185, 104);
+        display: block;
+        z-index: 0;
+        margin:auto;
+        margin-top:2px;
+        animation: show 1s linear 1;
+        transform: scale(0);
+        transition: .5s;
+        box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 2px 2px;
+        
+}
+.bt:hover{
+    background-color: rgba(255, 185, 104, 0.5);
+}
+    /*.bt1{}*/
+
+    .menu{position: fixed;
+        margin-top:5px;
+        margin-left:35px;
+        height: 205px;
+        top:-200px;
+        transition: .5s;
+       
+    }
+    .bt-is-open{transform: scale(1);
+    }
+    .menu-is-open{top:70px;
+    }
+
+    .title{
+        height: 90vh;
+        background:rgb(255, 185, 104);
+        background-image:url('./images/im1.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 70%;
+        background-attachment: fixed;
+        animation: change 20s linear infinite;
+         
+    }
+    @keyframes change{
+        0%{background-image: url('./images/im1.jpg');}
+        33%{background-image: url('./images/im1.jpg');}
+        35%{background-image: url('./images/im2.jpg');} 
+        67%{background-image: url('./images/im2.jpg');}     
+        69%{background-image:url('./images/im3.jpg');}
+        98%{background-image:url('./images/im3.jpg');}
+        100%{background-image:url('./images/im1.jpg');}}
+
+.mind{
+   
+    background:rgb(255, 178, 90);
+    color:white;
+    padding:50px;
+    font-size: 30px;
+    text-align: center;
+}
+.b1{background: rgba(255, 255, 255, 0.9);
+margin:auto;
+margin-top:20px;
+box-sizing: border-box;
+width: 250px;
+height: 70px;
+color: black;
+padding: 15px;
+box-shadow:rgba(0, 0, 0, 0.1) 0px 0px 2px 2px;}
+.b1:hover{background:rgba(255, 255, 255, 0.6);
+color:rgba(0, 0, 0, 0.8);
+}
+.space{width: 10px;
+height: 70px;
+display:inline-block;
+margin:-85px 0 0 0 ;}
+
+.content{padding: 20px 40px;}
+
+.c1{font-size: 18px;}
+
+.c2{  background-image:url('./images/im3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
+        background-attachment: fixed;
+        color:white;
+        font-size: 25px;
+        text-align: center;
+        text-shadow: rgba(0, 0, 0, 1) 0px 0px 10px 10px;}
+
+
+.c3{color:white;
+        font-size: 22px;
+        text-align: center;
+        background-color:rgb(255, 185, 104);
+}
+.comm{display: none;}}
+
+ @media (min-width: 400px){
+.menubt{
+margin-left:70px; 
+ }}
+
+ @media (min-width: 750px){
+.menubt{
+margin-left:400px; 
+ }}
+
+  @media (min-width: 1000px){
+.menubt{margin-left:10px; }
+.comm{display: inline-block;
+    box-sizing: border-box;
+    height: 90vh;
+width: 40%;
+background-color: rgba(255, 255, 255, 0.5);
+margin-left:60%;
+color: black;
+padding:150px 100px;
+font-size: 30px;}}
+    </style>
+
+
+</head>
+<body>
+  <div class="head">Lorem<span class="embleme">Ratione</span>
+<div id="btn" class="menubt"></div>
+</div>
+<div id="main_menu" class="menu">
+    <a href=""><div id="bt1" class="bt ">Ipsum</div></a>
+    <a href=""><div id="bt2" class="bt ">Dolor</div></a>
+    <a href=""><div id="bt3" class="bt">Optio</div></a>
+    <a href=""><div id="bt4"class="bt">Sequi</div></a>
+</div> 
+  <div class="title">
+      <div class="comm">
+         <p> "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+           Omnis suscipit tempore, similique vel doloremque ex commodi". <br><br>
+        <span class="autor"> Dignissimos Minus</span></p>
+      </div>
+  </div> 
+  <div class="mind">  
+     <p> Nulla sapiente quasi, quod ab omnis expedita perspiciatis.</p>
+    <a href="">  <div class="b1">Lorem ipsum </div></a></div>
+
+    <div class="content c1">
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti totam maiores ex itaque iusto esse earum dolorem. Nam, blanditiis! Ea explicabo provident quas vitae corporis tempore qui, vel tempora!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto mollitia officiis maxime a omnis quas recusandae voluptatibus assumenda. Placeat voluptas debitis quam pariatur fuga accusantium, quasi dolorum vel. Odio, cupiditate?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit possimus sapiente, laborum dolorem necessitatibus praesentium vitae quo sit ipsa consequuntur maiores beatae quisquam blanditiis eum rem unde ea mollitia obcaecati.</p> 
+        
+    </div>
+    <div class="content c2">
+       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt ipsa quisquam! Facilis officia nam mollitia perferendis ducimus vel inventore, doloremque recusandae sequi modi minima nulla aut, voluptas quibusdam eveniet?</p>
+        
+
+    </div>
+    <div class="content c1">
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, modi quidem excepturi sit, enim ipsa dolores, assumenda doloremque quibusdam inventore porro tenetur esse distinctio officia hic earum mollitia? Repellendus, perferendis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero odio autem, et perferendis a ex deleniti consequuntur illo magni pariatur! Sequi, cum eius veniam amet repellat aspernatur blanditiis impedit animi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsam, provident aliquid laboriosam in iure corporis ea sequi modi cumque enim sint esse ducimus obcaecati placeat quaerat quia perferendis quam.</p> 
+
+    </div>
+    <div class="content c3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, modi quidem excepturi sit, enim ipsa dolores, assumenda doloremque quibusdam inventore porro tenetur esse distinctio officia hic earum mollitia? Repellendus, perferendis.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero odio autem, et perferendis a ex deleniti consequuntur illo magni pariatur! Sequi, cum eius veniam amet repellat aspernatur blanditiis impedit animi.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsam, provident aliquid laboriosam in iure corporis ea sequi modi cumque enim sint esse ducimus obcaecati placeat quaerat quia perferendis quam.</p> 
+ 
+     </div>
+
+     <div class="content c1">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut deleniti totam maiores ex itaque iusto esse earum dolorem. Nam, blanditiis! Ea explicabo provident quas vitae corporis tempore qui, vel tempora!
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto mollitia officiis maxime a omnis quas recusandae voluptatibus assumenda. Placeat voluptas debitis quam pariatur fuga accusantium, quasi dolorum vel. Odio, cupiditate?
+         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit possimus sapiente, laborum dolorem necessitatibus praesentium vitae quo sit ipsa consequuntur maiores beatae quisquam blanditiis eum rem unde ea mollitia obcaecati.</p> 
+         
+     </div>
+     <div class="content c2">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate sunt ipsa quisquam! Facilis officia nam mollitia perferendis ducimus vel inventore, doloremque recusandae sequi modi minima nulla aut, voluptas quibusdam eveniet?</p>
+         
+ 
+     </div>
+     <div class="content c1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, modi quidem excepturi sit, enim ipsa dolores, assumenda doloremque quibusdam inventore porro tenetur esse distinctio officia hic earum mollitia? Repellendus, perferendis.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero odio autem, et perferendis a ex deleniti consequuntur illo magni pariatur! Sequi, cum eius veniam amet repellat aspernatur blanditiis impedit animi.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsam, provident aliquid laboriosam in iure corporis ea sequi modi cumque enim sint esse ducimus obcaecati placeat quaerat quia perferendis quam.</p> 
+ 
+     </div>
+     <div class="content c3">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, modi quidem excepturi sit, enim ipsa dolores, assumenda doloremque quibusdam inventore porro tenetur esse distinctio officia hic earum mollitia? Repellendus, perferendis.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero odio autem, et perferendis a ex deleniti consequuntur illo magni pariatur! Sequi, cum eius veniam amet repellat aspernatur blanditiis impedit animi.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ipsam, provident aliquid laboriosam in iure corporis ea sequi modi cumque enim sint esse ducimus obcaecati placeat quaerat quia perferendis quam.</p> 
+  
+      </div>
+
+     
+   
+
+  <script>
+        btn.addEventListener('click', function(){
+        bt1.classList.toggle('bt-is-open')})
+
+         btn.addEventListener('click', function(){
+        bt2.classList.toggle('bt-is-open')})
+        
+        btn.addEventListener('click', function(){
+        bt3.classList.toggle('bt-is-open')})
+        
+        btn.addEventListener('click', function(){
+        bt4.classList.toggle('bt-is-open')})
+
+        btn.addEventListener('click', function(){
+        main_menu.classList.toggle('menu-is-open')})
+        </script>
+
+</body>
+</html>
